@@ -1,0 +1,23 @@
+body {
+    background-color: gray;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font: caption;
+    font-size: 1.8em;
+    margin: 20px;
+}
+
+input {
+    width: 300px;
+    height: 25px;
+    margin: 5px;
+    text-align: center;
+}
+
+#go {
+    background-color: antiquewhite;
+    width: 150px;
+}

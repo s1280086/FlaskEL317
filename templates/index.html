@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charaset="UTF-8">
+        <title>So Do I maker</title>
+        <link rel="stylesheet" href="{{ 
+        url_for('static', filename='css/main.css')}}">
+    </head>
+    <body>
+        <p>Please input sentence and subject</p>
+        <br>
+        <form action="go" method="post">
+            <p>Please Input sentence here</p>
+            <input type="text" name="sentence">
+            <br>
+            <p>Please Input subject here</p>
+            <input type="text" name="subject">
+            <br>
+            <br>
+            <input type="submit" value="GO" id="go">
+            <br>
+            <br>
+            <br>
+            <p>Input and Output are display ↓↓↓</p>
+            <br>
+            {% for message in get_flashed_messages()%}
+                <p> {{message}}</p>
+            {% endfor %}
+    </body>
